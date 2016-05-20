@@ -41,14 +41,13 @@
 				<h1>Test Page for APIs</h1>
 
 				<form id="contact-form" method="post" action="" role="form">
-					<div class="message"></div>
 					<div class="controls">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="form-group">
 									<select id="selectapi" class="form-control">
-										<option data-name="github" value="https://api.github.com/users/">GitHub</option>
-										<option data-name="facebook" value="">Facebook</option>
+										<option value="https://api.github.com/users/">GitHub</option>
+										<option value="">Facebook</option>
 									</select>
 								</div>
 
@@ -62,11 +61,20 @@
 						</div>
 					</div>
 				</form>
+				<h4 class="message" style="color:red"></h4>
 				<div class="github">
 					<div class="col-lg-8 pad-left-0">
-						<p>ID: <span class="id"></span></p>
-						<p>Name: <span class="name"></span></p>
-						<p>Name: <span class="name"></span></p>
+						<p><b>ID: </b><span class="id"></span></p>
+						<p><b>Name: </b><span class="name"></span></p>
+						<p><b>Type: </b><span class="type"></span></p>
+						<p><b>Site Admin: </b><span class="admin"></span></p>
+						<p><b>Url: </b><span class="url"></span></p>
+						<p><b>Git Hub Page: </b><span class="page"></span></p>
+						<p><b>Followers url: </b><span class="furl"></span></p>
+						<p><b>Following url: </b><span class="fgurl"></span></p>
+						<p><b>Public Repos: </b><span class="prepos"></span></p>
+						<p><b>Created at: </b><span class="cat"></span></p>
+						<p><b>Updated at: </b><span class="uat"></span></p>
 					</div>
 					<div class="col-lg-4 pad-right-0">
 						<img src="" class="avatar">

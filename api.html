@@ -1,0 +1,91 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+	<style type="text/css">
+		body {
+			font-family: 'Lato', sans-serif;
+		}
+		h1{
+			margin-bottom: 40px;
+		}
+		label {
+			color: #333;
+		}
+		.btn {
+			font-weight: 300;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			margin-bottom: 20px;
+		}
+		.avatar {
+			height: 200px;
+			width: 200px;
+		}
+		.pad-left-0 {
+			padding-left: 0
+		}
+		.pad-right-0 {
+			padding-right: 0;
+			margin-right: 0;
+		}
+	</style>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-lg-8 col-lg-offset-2">
+
+				<h1>Test Page for APIs</h1>
+
+				<form id="contact-form" method="post" action="" role="form">
+					<div class="message"></div>
+					<div class="controls">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<select id="selectapi" class="form-control">
+										<option data-name="github" value="https://api.github.com/users/">GitHub</option>
+										<option data-name="facebook" value="">Facebook</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<input id="param" type="text" name="param" class="form-control" placeholder="Please enter any parameter">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<input type="submit" class="btn btn-success" id="submitbtn" value="Test">
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="github">
+					<div class="col-lg-8 pad-left-0">
+						<p>ID: <span class="id"></span></p>
+						<p>Name: <span class="name"></span></p>
+						<p>Name: <span class="name"></span></p>
+					</div>
+					<div class="col-lg-4 pad-right-0">
+						<img src="" class="avatar">
+					</div>
+				</div>
+				<div class="facebook">
+					<div class="col-lg-8 pad-left-0">
+						<p>ID: <span class="id"></span></p>
+						<p>Name: <span class="name"></span></p>
+					</div>
+					<div class="col-lg-4 pad-right-0">
+						<img src="" class="avatar">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="api.js"></script>
+</body>
+</html>
